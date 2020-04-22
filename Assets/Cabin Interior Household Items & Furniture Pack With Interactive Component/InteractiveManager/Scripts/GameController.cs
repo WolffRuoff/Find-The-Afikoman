@@ -23,6 +23,9 @@ public class GameController : MonoBehaviour
                 if(idCheck != matzahSurvivor)
                 {
                     Destroy(i);
+                } else
+                {
+                    HotColdBar.receiveMatzah(i);
                 }
             }
         }

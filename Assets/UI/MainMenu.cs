@@ -34,17 +34,17 @@ public class MainMenu : MonoBehaviour
         if (level == 15)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            secondsCount = 0;
+            /*secondsCount = 0;
             minuteCount = 0;
-            hourCount = 0;
+            hourCount = 0;*/
         }
         else if (level == 1)
         {
             StartCoroutine(AudioController.FadeOut(audioS, 1f));
             SceneManager.LoadScene("Demo");
-            secondsCount = 0;
+            /*secondsCount = 0;
             minuteCount = 0;
-            hourCount = 0;
+            hourCount = 0;*/
         }
         else if (level == 2)
         {
