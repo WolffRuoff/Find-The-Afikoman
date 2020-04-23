@@ -18,8 +18,6 @@ public class HotColdBar : MonoBehaviour
 
     void Start()
     {
-        matzah = null;
-        active = false;
         hotCold = GetComponent<Image>();
         cg = GetComponent<CanvasGroup>();
         cg.alpha = 0;
