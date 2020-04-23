@@ -17,9 +17,11 @@ public class MainMenu : MonoBehaviour
     public GameObject nextButton;
 
     public AudioSource audioS;
+    public GameObject loadingScreen;
     private void Start()
     {
         howToPlay.enabled = false;
+        loadingScreen.GetComponent<LoadingScreen>().Disable();
         slides = new GameObject[] { slide1, slide2, slide3, slide4 };
         foreach(GameObject slide in slides)
         {
@@ -33,23 +35,31 @@ public class MainMenu : MonoBehaviour
     {
         if (level == 15)
         {
+            ApplicationModel.secondsCount = 0;
+            ApplicationModel.minuteCount = 0;
+            ApplicationModel.hourCount = 0;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            /*secondsCount = 0;
-            minuteCount = 0;
-            hourCount = 0;*/
         }
         else if (level == 1)
         {
+            ApplicationModel.secondsCount = 0;
+            ApplicationModel.minuteCount = 0;
+            ApplicationModel.hourCount = 0;
+
+            title.enabled = false;
+            howToPlay.enabled = false;
+            loadingScreen.GetComponent<LoadingScreen>().Enable();
+            loadingScreen.GetComponent<LoadingScreen>().LoadScreenExample();
+
             StartCoroutine(AudioController.FadeOut(audioS, 1f));
-            SceneManager.LoadScene("Demo");
-            /*secondsCount = 0;
-            minuteCount = 0;
-            hourCount = 0;*/
+            //SceneManager.LoadScene("Demo");
         }
         else if (level == 2)
         {
             SceneManager.LoadScene("Main Menu");
         }
+
+        //Back Button
         else if (level == 3)
         {
             if (slide1.activeSelf)
@@ -68,6 +78,8 @@ public class MainMenu : MonoBehaviour
                 CallPrevSlide();
             }
         }
+
+        //Next button
         else if (level == 4)
         {
             if (slides[slides.Length-2].activeSelf)
@@ -77,6 +89,8 @@ public class MainMenu : MonoBehaviour
             }
             CallNextSlide();
         }
+
+        //How to play button
         else if(level == 5)
         {
             title.enabled = false;
