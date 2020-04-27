@@ -8,5 +8,5 @@ public class ApplicationModel
     static public int minuteCount;
     static public int hourCount;
     static public int difficulty;
-    static bool findAll;
+    static public bool findAll;
 }

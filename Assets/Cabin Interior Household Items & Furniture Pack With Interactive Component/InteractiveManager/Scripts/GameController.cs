@@ -12,20 +12,33 @@ public class GameController : MonoBehaviour
     {
         GameObject[] matzahs = GameObject.FindGameObjectsWithTag("Win");
         matzahNumber = matzahs.Length + 1;
-        if (matzahSurvivor == 0)
+        if (ApplicationModel.findAll)
         {
-            matzahSurvivor = Random.Range(1,matzahNumber);
-            Debug.Log(matzahSurvivor);
-            Debug.Log(matzahNumber);
-            foreach (GameObject i in matzahs)
+            //if Game Mode is findAll, randomly destory 3 matzahs, leave the rest
+            for (int i=0; i<3; i++)
             {
-                int idCheck = i.GetComponent<InteractiveMatzah>().id;
-                if(idCheck != matzahSurvivor)
+                Destroy(matzahs[Random.Range(1, matzahNumber)]);
+            }
+        }
+        else
+        {
+            //if Game Mode is not findAll, randomly save 1 matzah, destroy the rest
+            if (matzahSurvivor == 0)
+            {
+                matzahSurvivor = Random.Range(1, matzahNumber);
+                Debug.Log(matzahSurvivor);
+                Debug.Log(matzahNumber);
+                foreach (GameObject i in matzahs)
                 {
-                    Destroy(i);
-                } else
-                {
-                    HotColdBar.receiveMatzah(i);
+                    int idCheck = i.GetComponent<InteractiveMatzah>().id;
+                    if (idCheck != matzahSurvivor)
+                    {
+                        Destroy(i);
+                    }
+                    else
+                    {
+                        HotColdBar.receiveMatzah(i);
+                    }
                 }
             }
         }
