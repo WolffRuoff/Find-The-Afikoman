@@ -9,4 +9,6 @@ public class ApplicationModel
     static public int hourCount;
     static public int difficulty;
     static public bool findAll;
+    static public int score;
+    static public GameObject[] matzahs;
 }

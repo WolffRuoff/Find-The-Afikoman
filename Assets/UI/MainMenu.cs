@@ -88,6 +88,7 @@ public class MainMenu : MonoBehaviour
             ApplicationModel.secondsCount = 0;
             ApplicationModel.minuteCount = 0;
             ApplicationModel.hourCount = 0;
+            ApplicationModel.score = 0;
             ApplicationModel.findAll = true;
 
             title.enabled = false;

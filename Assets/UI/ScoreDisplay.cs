@@ -10,7 +10,13 @@ public class ScoreDisplay : MonoBehaviour
     void Start()
     {
         Screen.lockCursor = false;
-        timerText.text = "Your time was\n" + ApplicationModel.minuteCount + " minutes and " + ApplicationModel.secondsCount.ToString("n2") + " seconds!";
+        if (!ApplicationModel.findAll)
+            timerText.text = "Your time was\n" + ApplicationModel.minuteCount + " minutes and " + ApplicationModel.secondsCount.ToString("n2") + " seconds!";
+        else
+        {
+            timerText.text = "Your score was\n" + ApplicationModel.score;
+        }
+        
     }
 
     // Update is called once per frame

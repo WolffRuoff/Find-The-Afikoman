@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.SceneManagement;
+
 
 public class GameController : MonoBehaviour
 {
@@ -11,23 +13,28 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         if (ApplicationModel.findAll)
         {
-            GameObject[] matzahs = GameObject.FindGameObjectsWithTag("Easy");
-            GameObject[] matzahs2 = GameObject.FindGameObjectsWithTag("Hard");
-            matzahs = matzahs.Concat(matzahs2).ToArray();
-
-            matzahNumber = matzahs.Length + 1;
+            ApplicationModel.minuteCount = 1;
+            GameObject[] easyM = GameObject.FindGameObjectsWithTag("Easy");
+            GameObject[] hardM = GameObject.FindGameObjectsWithTag("Hard");
+            easyM = easyM.Concat(hardM).ToArray();
+            ApplicationModel.matzahs = easyM; 
             //if Game Mode is findAll, randomly destory 3 matzahs, leave the rest
             for (int i=0; i<3; i++)
             {
-                Destroy(matzahs[Random.Range(1, matzahNumber)]);
+                matzahNumber = ApplicationModel.matzahs.Length + 1;
+                int d = Random.Range(1, matzahNumber);
+                Destroy(ApplicationModel.matzahs[d]);
+                var m = new List<GameObject>(ApplicationModel.matzahs);
+                m.RemoveAt(d);
+                ApplicationModel.matzahs= m.ToArray();
             }
         }
         else
         {
             //if Game Mode is not findAll, randomly save 1 matzah, destroy the rest
+            GameObject.FindGameObjectWithTag("Score").SetActive(false);
             if (matzahSurvivor == 0)
             {
                 string cTag;

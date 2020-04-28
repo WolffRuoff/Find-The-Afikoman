@@ -18,6 +18,10 @@ public class HotColdBar : MonoBehaviour
     void Start()
     {
         hotCold = GetComponent<Image>();
+        if (ApplicationModel.findAll)
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 
     void Update()
