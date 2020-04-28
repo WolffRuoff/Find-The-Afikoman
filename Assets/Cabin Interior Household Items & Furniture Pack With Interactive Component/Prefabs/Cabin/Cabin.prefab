@@ -1113,7 +1113,8 @@ Transform:
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00000008940697}
   m_LocalPosition: {x: -5.2648535, y: 0.30900002, z: -3.7119956}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 2296849760744820582}
   m_Father: {fileID: 4740788875399092}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5959,7 +5960,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.08689231, y: -1.077047, z: -0.25885212}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 8099395203375584153}
   m_Father: {fileID: 4012723759800950}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9717,9 +9719,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1189905775286818}
   m_LocalRotation: {x: -0, y: 0.5039023, z: -0, w: 0.86376065}
-  m_LocalPosition: {x: -0.19269615, y: 0.96815014, z: -0.36727315}
+  m_LocalPosition: {x: -0.1927, y: 0.96815014, z: -0.296}
   m_LocalScale: {x: 0.052571334, y: 0.052571338, z: 0.052571334}
-  m_Children: []
+  m_Children:
+  - {fileID: 7626168673095255780}
   m_Father: {fileID: 4844160356271080}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -29.482971, z: 0}
@@ -34406,6 +34409,7 @@ Transform:
   - {fileID: 4940729817689322}
   - {fileID: 4426291329858008}
   - {fileID: 4839758210134336}
+  - {fileID: 5517459166066916772}
   m_Father: {fileID: 4856567810836854}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: -36.5, z: 0}
@@ -49556,6 +49560,7 @@ Transform:
   - {fileID: 4693074802040532}
   - {fileID: 4338184379219524}
   - {fileID: 4587739330334134}
+  - {fileID: 1004883557584805430}
   m_Father: {fileID: 4740788875399092}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -55857,10 +55862,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Afikoman Bag
       objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693726, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_TagString
+      value: Easy
+      objectReference: {fileID: 0}
     - target: {fileID: 7691740537353693727, guid: 0a6c72024d745054bb446b92d5fd1d01,
         type: 3}
       propertyPath: id
-      value: 10
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6c72024d745054bb446b92d5fd1d01, type: 3}
@@ -55947,10 +55957,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Afikoman Bag
       objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693726, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_TagString
+      value: Easy
+      objectReference: {fileID: 0}
     - target: {fileID: 7691740537353693727, guid: 0a6c72024d745054bb446b92d5fd1d01,
         type: 3}
       propertyPath: id
-      value: 2
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7691740537353693727, guid: 0a6c72024d745054bb446b92d5fd1d01,
         type: 3}
@@ -56042,10 +56057,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Afikoman Bag
       objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693726, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_TagString
+      value: Easy
+      objectReference: {fileID: 0}
     - target: {fileID: 7691740537353693727, guid: 0a6c72024d745054bb446b92d5fd1d01,
         type: 3}
       propertyPath: id
-      value: 3
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6c72024d745054bb446b92d5fd1d01, type: 3}
@@ -56137,10 +56157,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Afikoman Bag
       objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693726, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_TagString
+      value: Hard
+      objectReference: {fileID: 0}
     - target: {fileID: 7691740537353693727, guid: 0a6c72024d745054bb446b92d5fd1d01,
         type: 3}
       propertyPath: id
-      value: 11
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693727, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: difficulty
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6c72024d745054bb446b92d5fd1d01, type: 3}
@@ -56227,15 +56257,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Afikoman Bag
       objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693726, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_TagString
+      value: Hard
+      objectReference: {fileID: 0}
     - target: {fileID: 7691740537353693727, guid: 0a6c72024d745054bb446b92d5fd1d01,
         type: 3}
       propertyPath: id
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7691740537353693727, guid: 0a6c72024d745054bb446b92d5fd1d01,
         type: 3}
       propertyPath: ItemPriority
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693727, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: difficulty
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6c72024d745054bb446b92d5fd1d01, type: 3}
@@ -56322,10 +56362,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Afikoman Bag
       objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693726, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_TagString
+      value: Easy
+      objectReference: {fileID: 0}
     - target: {fileID: 7691740537353693727, guid: 0a6c72024d745054bb446b92d5fd1d01,
         type: 3}
       propertyPath: id
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6c72024d745054bb446b92d5fd1d01, type: 3}
@@ -56334,6 +56379,101 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
     type: 3}
   m_PrefabInstance: {fileID: 2726918521726313258}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3294691641615058425
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4730908349688098}
+    m_Modifications:
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.42040017
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.528
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.38694426
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693726, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_Name
+      value: Afikoman Bag
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693726, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_TagString
+      value: Easy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693727, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: id
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a6c72024d745054bb446b92d5fd1d01, type: 3}
+--- !u!4 &1004883557584805430 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+    type: 3}
+  m_PrefabInstance: {fileID: 3294691641615058425}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3746026297500652972
 PrefabInstance:
@@ -56411,6 +56551,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Afikoman Bag
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693726, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_TagString
+      value: Hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693727, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: id
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693727, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: difficulty
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6c72024d745054bb446b92d5fd1d01, type: 3}
@@ -56497,10 +56652,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Afikoman Bag
       objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693726, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_TagString
+      value: Easy
+      objectReference: {fileID: 0}
     - target: {fileID: 7691740537353693727, guid: 0a6c72024d745054bb446b92d5fd1d01,
         type: 3}
       propertyPath: id
-      value: 7
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6c72024d745054bb446b92d5fd1d01, type: 3}
@@ -56509,6 +56669,211 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
     type: 3}
   m_PrefabInstance: {fileID: 4353817552092101204}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4587765465017865385
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4404057039420064}
+    m_Modifications:
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.011946687
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.12700003
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.049204823
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.000000033417955
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.000000033417955
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693726, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_Name
+      value: Afikoman Bag
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693726, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_TagString
+      value: Hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693727, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: difficulty
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693727, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: id
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a6c72024d745054bb446b92d5fd1d01, type: 3}
+--- !u!4 &2296849760744820582 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+    type: 3}
+  m_PrefabInstance: {fileID: 4587765465017865385}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5304836646089071915
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4485998852946490}
+    m_Modifications:
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.2683158
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.12269265
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.43243796
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0015941593
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.96706486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.006058699
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.25445324
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -0.71800005
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180.00002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 19.02178
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 38.04358
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 19.021778
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693726, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_Name
+      value: Afikoman Bag
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693726, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_TagString
+      value: Hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693727, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: id
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693727, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: difficulty
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a6c72024d745054bb446b92d5fd1d01, type: 3}
+--- !u!4 &7626168673095255780 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+    type: 3}
+  m_PrefabInstance: {fileID: 5304836646089071915}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5441828180588867411
 PrefabInstance:
@@ -56592,10 +56957,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Afikoman Bag
       objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693726, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_TagString
+      value: Hard
+      objectReference: {fileID: 0}
     - target: {fileID: 7691740537353693727, guid: 0a6c72024d745054bb446b92d5fd1d01,
         type: 3}
       propertyPath: id
-      value: 8
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693727, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: difficulty
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6c72024d745054bb446b92d5fd1d01, type: 3}
@@ -56682,10 +57057,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Afikoman Bag
       objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693726, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_TagString
+      value: Hard
+      objectReference: {fileID: 0}
     - target: {fileID: 7691740537353693727, guid: 0a6c72024d745054bb446b92d5fd1d01,
         type: 3}
       propertyPath: id
-      value: 9
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693727, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: difficulty
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6c72024d745054bb446b92d5fd1d01, type: 3}
@@ -56694,6 +57079,106 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
     type: 3}
   m_PrefabInstance: {fileID: 5476781137644898923}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5777517801269315670
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4729879937119616}
+    m_Modifications:
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0772
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0031864643
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0016
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693726, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_Name
+      value: Afikoman Bag
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693726, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_TagString
+      value: Hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693727, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: id
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693727, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: difficulty
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a6c72024d745054bb446b92d5fd1d01, type: 3}
+--- !u!4 &8099395203375584153 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+    type: 3}
+  m_PrefabInstance: {fileID: 5777517801269315670}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7624156659863064656
 PrefabInstance:
@@ -56772,10 +57257,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Afikoman Bag
       objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693726, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_TagString
+      value: Easy
+      objectReference: {fileID: 0}
     - target: {fileID: 7691740537353693727, guid: 0a6c72024d745054bb446b92d5fd1d01,
         type: 3}
       propertyPath: id
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6c72024d745054bb446b92d5fd1d01, type: 3}
@@ -56784,4 +57274,99 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
     type: 3}
   m_PrefabInstance: {fileID: 7624156659863064656}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7843857897291720299
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4501819389015222}
+    m_Modifications:
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.10830233
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.12337987
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.30016237
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.29711065
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.09897867
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.90101665
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -36.850002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693726, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_Name
+      value: Afikoman Bag
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693726, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: m_TagString
+      value: Easy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691740537353693727, guid: 0a6c72024d745054bb446b92d5fd1d01,
+        type: 3}
+      propertyPath: id
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a6c72024d745054bb446b92d5fd1d01, type: 3}
+--- !u!4 &5517459166066916772 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2326963330714115023, guid: 0a6c72024d745054bb446b92d5fd1d01,
+    type: 3}
+  m_PrefabInstance: {fileID: 7843857897291720299}
   m_PrefabAsset: {fileID: 0}

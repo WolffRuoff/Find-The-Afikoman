@@ -31,7 +31,12 @@ namespace MB {
         
         public override void Activate(PlayerInteractiveManager playerInteractiveManager)
         {
-            SceneManager.LoadScene("Winner");
+            if(!ApplicationModel.findAll)
+                SceneManager.LoadScene("Winner");
+            else
+            {
+                //Code here to tick score up by 1
+            }
         }
         
     }

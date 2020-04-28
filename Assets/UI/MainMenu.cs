@@ -12,6 +12,8 @@ public class MainMenu : MonoBehaviour
     public GameObject slide3;
     public GameObject slide4;
     private GameObject[] slides;
+    
+    public Canvas modes;
 
     public GameObject playButton;
     public GameObject nextButton;
@@ -21,6 +23,7 @@ public class MainMenu : MonoBehaviour
     private void Start()
     {
         howToPlay.enabled = false;
+        modes.enabled = false;
         loadingScreen.GetComponent<LoadingScreen>().Disable();
         slides = new GameObject[] { slide1, slide2, slide3, slide4 };
         foreach(GameObject slide in slides)
@@ -40,14 +43,56 @@ public class MainMenu : MonoBehaviour
             ApplicationModel.hourCount = 0;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
-        else if (level == 1)
+        else if(level == 1)
+        {
+            title.enabled = false;
+            howToPlay.enabled = false;
+            modes.enabled = true;
+        }
+        else if (level == 16) //Easy
         {
             ApplicationModel.secondsCount = 0;
             ApplicationModel.minuteCount = 0;
             ApplicationModel.hourCount = 0;
+            ApplicationModel.difficulty = 0;
+            ApplicationModel.findAll = false;
 
             title.enabled = false;
             howToPlay.enabled = false;
+            modes.enabled = false;
+            loadingScreen.GetComponent<LoadingScreen>().Enable();
+            loadingScreen.GetComponent<LoadingScreen>().LoadScreenExample();
+
+            StartCoroutine(AudioController.FadeOut(audioS, 1f));
+            //SceneManager.LoadScene("Demo");
+        }
+        else if (level == 17) //Hard
+        {
+            ApplicationModel.secondsCount = 0;
+            ApplicationModel.minuteCount = 0;
+            ApplicationModel.hourCount = 0;
+            ApplicationModel.difficulty = 1;
+            ApplicationModel.findAll = false;
+
+            title.enabled = false;
+            howToPlay.enabled = false;
+            modes.enabled = false;
+            loadingScreen.GetComponent<LoadingScreen>().Enable();
+            loadingScreen.GetComponent<LoadingScreen>().LoadScreenExample();
+
+            StartCoroutine(AudioController.FadeOut(audioS, 1f));
+            //SceneManager.LoadScene("Demo");
+        }
+        else if (level == 18) //arcade
+        {
+            ApplicationModel.secondsCount = 0;
+            ApplicationModel.minuteCount = 0;
+            ApplicationModel.hourCount = 0;
+            ApplicationModel.findAll = true;
+
+            title.enabled = false;
+            howToPlay.enabled = false;
+            modes.enabled = false;
             loadingScreen.GetComponent<LoadingScreen>().Enable();
             loadingScreen.GetComponent<LoadingScreen>().LoadScreenExample();
 

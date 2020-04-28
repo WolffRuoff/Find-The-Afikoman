@@ -31,8 +31,8 @@ public class LoadingScreen : MonoBehaviour
             if (async.progress == 0.9f)
             {
                 slider.value = 1f;
-                playButton.SetActive(true);
-                //async.allowSceneActivation = true;
+                //playButton.SetActive(true);
+                async.allowSceneActivation = true;
             }
             yield return null;
 
