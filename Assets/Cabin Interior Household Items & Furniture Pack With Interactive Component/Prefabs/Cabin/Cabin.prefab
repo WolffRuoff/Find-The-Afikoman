@@ -1095,7 +1095,6 @@ GameObject:
   - component: {fileID: 33693889467786438}
   - component: {fileID: 23428756694901426}
   - component: {fileID: 65774468070609382}
-  - component: {fileID: 114147653604622502}
   m_Layer: 9
   m_Name: LaundryBasket
   m_TagString: Untagged
@@ -1177,20 +1176,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.3208812, y: 0.35779727, z: 0.3039136}
   m_Center: {x: -0.0004982352, y: 0.026353553, z: 0}
---- !u!114 &114147653604622502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1018482887707672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b0826cf700eb46a795bf2f458b687e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ItemPriority: 0
-  _infoText: Laundry Basket
 --- !u!1 &1020580715090730
 GameObject:
   m_ObjectHideFlags: 0
