@@ -5,11 +5,13 @@ using UnityEngine.UI;
 
 public class HotColdBar : MonoBehaviour
 {
+    public static float flashTimer = 1f;
     public float maxDist = 15f;
     public GameObject player;
 
     private static GameObject matzah;
-    private static float secondsUntilStart = 210f;
+    private static float secondsUntilFlash;
+    private static float secondsUntilFlashTimer;
     private static bool active = false;
     private Image hotCold;
     private Text text;
@@ -30,18 +32,33 @@ public class HotColdBar : MonoBehaviour
         // wait until the matzah is chosen
         if (active)
         {
-            // wait to display the bar (time waited based on difficulty)
-            secondsUntilStart -= Time.deltaTime;
+            text.gameObject.SetActive(true);
 
-            if (secondsUntilStart < 0)
+            if (secondsUntilFlashTimer > 0)
             {
-                text.gameObject.SetActive(true);
+                // countdown until show
+                secondsUntilFlashTimer -= Time.deltaTime;
+                hotCold.color = Color.white;
+                text.fontSize = 54;
+                text.text = "Hot/Cold Powerup in: " + Mathf.Ceil(secondsUntilFlashTimer) + " seconds";
+            }
+            else
+            {
+                // show for 1 sec
+                flashTimer -= Time.deltaTime;
 
-                // calculate the distance from the matzah
+                // calculate the distance, lerp the color and update the text
                 float dist = Vector3.Distance(player.transform.position, matzah.transform.position) - .75f;
-                // lerp the color of the bar and change the text based on the distance
                 hotCold.color = Color.Lerp(red, blue, (dist / maxDist));
                 text.text = (dist < .6f) ? "Hot" : "Cold";
+                text.fontSize = 115;
+
+                // reset
+                if (flashTimer < 0)
+                {
+                    secondsUntilFlashTimer = secondsUntilFlash;
+                    flashTimer = 1f;
+                }
             }
         }
     }
@@ -49,7 +66,8 @@ public class HotColdBar : MonoBehaviour
     public static void receiveMatzah(GameObject m, float seconds)
     {
         matzah = m;
-        secondsUntilStart = seconds;
+        secondsUntilFlashTimer = seconds;
+        secondsUntilFlash = seconds;
         active = true;
     }
 }

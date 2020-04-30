@@ -69,7 +69,7 @@ public class GameController : MonoBehaviour
                     }
                     else
                     {
-                        float seconds = (ApplicationModel.difficulty == 0) ? 150 : 240;
+                        float seconds = (ApplicationModel.difficulty == 0) ? 20 : 45;
                         HotColdBar.receiveMatzah(i, seconds);
                     }
                 }
