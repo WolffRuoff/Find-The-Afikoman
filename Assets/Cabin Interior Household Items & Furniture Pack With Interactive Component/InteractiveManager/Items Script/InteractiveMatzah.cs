@@ -35,7 +35,12 @@ namespace MB {
                 SceneManager.LoadScene("Winner");
             else
             {
-                //Code here to tick score up by 1
+                Destroy(this.gameObject);
+                ApplicationModel.score++;
+                if(ApplicationModel.score> ApplicationModel.matzahs.Length)
+                {
+                    SceneManager.LoadScene("Winner");
+                }
             }
         }
         
