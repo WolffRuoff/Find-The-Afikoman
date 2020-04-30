@@ -27,26 +27,21 @@ public class HotColdBar : MonoBehaviour
     {
         hotCold.color = new Color(0, 0, 0, 0);
 
-        // wait until the matzah is chosen and received
+        // wait until the matzah is chosen
         if (active)
         {
+            // wait to display the bar (time waited based on difficulty)
             secondsUntilStart -= Time.deltaTime;
+
             if (secondsUntilStart < 0)
             {
                 text.gameObject.SetActive(true);
-            }
 
-            float dist = Vector3.Distance(player.transform.position, matzah.transform.position) - .75f;
-            Debug.Log(dist);
-            hotCold.color = (secondsUntilStart < 0) ? Color.Lerp(red, blue, (dist / maxDist)) : new Color(0, 0, 0, 0);
-
-            if (dist < .6f)
-            {
-                text.text = "Hot";
-            }
-            else
-            {
-                text.text = "Cold";
+                // calculate the distance from the matzah
+                float dist = Vector3.Distance(player.transform.position, matzah.transform.position) - .75f;
+                // lerp the color of the bar and change the text based on the distance
+                hotCold.color = Color.Lerp(red, blue, (dist / maxDist));
+                text.text = (dist < .6f) ? "Hot" : "Cold";
             }
         }
     }
