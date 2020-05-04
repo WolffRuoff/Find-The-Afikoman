@@ -15,7 +15,7 @@ public class GameController : MonoBehaviour
     {
         if (ApplicationModel.findAll)
         {
-            ApplicationModel.minuteCount = 1;
+            ApplicationModel.minuteCount = 3;
             ApplicationModel.score = 0;
             GameObject[] easyM = GameObject.FindGameObjectsWithTag("Easy");
             GameObject[] hardM = GameObject.FindGameObjectsWithTag("Hard");
