@@ -27,7 +27,12 @@ public class HotColdBar : MonoBehaviour
 
     void Update()
     {
-        hotCold.color = new Color(0, 0, 0, 0);
+        if (ApplicationModel.findAll)
+        {
+            gameObject.SetActive(false);
+        }
+
+        //hotCold.color = new Color(0, 0, 0, 0);
 
         // wait until the matzah is chosen
         if (active)
