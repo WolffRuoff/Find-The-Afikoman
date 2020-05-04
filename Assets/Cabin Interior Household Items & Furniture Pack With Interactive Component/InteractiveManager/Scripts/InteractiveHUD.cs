@@ -32,10 +32,6 @@ public class InteractiveHUD : MonoBehaviour {
 					SceneManager.LoadScene("Winner");
                 }
 			}
-			else if (ApplicationModel.minuteCount <= 60)
-			{
-				ApplicationModel.minuteCount = 0;
-			}
 			timerText.text = "Time: " + ApplicationModel.minuteCount.ToString("00") + ":" + ((int)ApplicationModel.secondsCount).ToString("00") + "";
 			scoreText.text = "Score: " + ApplicationModel.score.ToString();
 		}

@@ -11,6 +11,8 @@ public class MainMenu : MonoBehaviour
     public GameObject slide2;
     public GameObject slide3;
     public GameObject slide4;
+    public GameObject slide5;
+    public GameObject slide6;
     private GameObject[] slides;
     
     public Canvas modes;
@@ -25,7 +27,7 @@ public class MainMenu : MonoBehaviour
         howToPlay.enabled = false;
         modes.enabled = false;
         loadingScreen.GetComponent<LoadingScreen>().Disable();
-        slides = new GameObject[] { slide1, slide2, slide3, slide4 };
+        slides = new GameObject[] { slide1, slide2, slide3, slide4, slide5, slide6 };
         foreach(GameObject slide in slides)
         {
             slide.SetActive(false);
@@ -38,9 +40,6 @@ public class MainMenu : MonoBehaviour
     {
         if (level == 15)
         {
-            ApplicationModel.secondsCount = 0;
-            ApplicationModel.minuteCount = 0;
-            ApplicationModel.hourCount = 0;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
         else if(level == 1)
@@ -51,9 +50,6 @@ public class MainMenu : MonoBehaviour
         }
         else if (level == 16) //Easy
         {
-            ApplicationModel.secondsCount = 0;
-            ApplicationModel.minuteCount = 0;
-            ApplicationModel.hourCount = 0;
             ApplicationModel.difficulty = 0;
             ApplicationModel.findAll = false;
 
@@ -68,9 +64,6 @@ public class MainMenu : MonoBehaviour
         }
         else if (level == 17) //Hard
         {
-            ApplicationModel.secondsCount = 0;
-            ApplicationModel.minuteCount = 0;
-            ApplicationModel.hourCount = 0;
             ApplicationModel.difficulty = 1;
             ApplicationModel.findAll = false;
 
@@ -85,10 +78,6 @@ public class MainMenu : MonoBehaviour
         }
         else if (level == 18) //arcade
         {
-            ApplicationModel.secondsCount = 0;
-            ApplicationModel.minuteCount = 0;
-            ApplicationModel.hourCount = 0;
-            ApplicationModel.score = 0;
             ApplicationModel.findAll = true;
 
             title.enabled = false;
