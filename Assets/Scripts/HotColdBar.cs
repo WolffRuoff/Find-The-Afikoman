@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class HotColdBar : MonoBehaviour
 {
-    public static float flashTimer = 1f;
+    public static float flashTimer = 1.5f;
     public float maxDist = 15f;
     public GameObject player;
 
@@ -31,8 +31,6 @@ public class HotColdBar : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
-
-        //hotCold.color = new Color(0, 0, 0, 0);
 
         // wait until the matzah is chosen
         if (active)
@@ -62,7 +60,7 @@ public class HotColdBar : MonoBehaviour
                 if (flashTimer < 0)
                 {
                     secondsUntilFlashTimer = secondsUntilFlash;
-                    flashTimer = 1f;
+                    flashTimer = 1.5f;
                 }
             }
         }
