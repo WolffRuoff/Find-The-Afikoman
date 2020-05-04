@@ -9,10 +9,11 @@ public class WinMenu : MonoBehaviour
 
     public GameObject playButton;
 
-    public AudioSource audioS;
+    private AudioSource audioS;
     public GameObject loadingScreen;
     private void Start()
     {
+        audioS = GetComponent<AudioSource>();
         loadingScreen.GetComponent<LoadingScreen>().Disable();
         StartCoroutine(AudioController.FadeIn(audioS, 3f));
     }

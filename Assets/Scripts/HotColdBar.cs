@@ -18,25 +18,20 @@ public class HotColdBar : MonoBehaviour
     private Color red = new Color(.55f, 0f, 0f, 1f);
     private Color blue = new Color(0f, 0f, .55f, 1f);
 
+    private int currScore = -1;
+
     void Start()
     {
         hotCold = GetComponent<Image>();
         text = transform.GetChild(0).GetComponent<Text>();
-        text.gameObject.SetActive(false);
     }
 
     void Update()
     {
-        if (ApplicationModel.findAll)
-        {
-            gameObject.SetActive(false);
-        }
 
         // wait until the matzah is chosen
-        if (active)
+        if (active && !ApplicationModel.findAll)
         {
-            text.gameObject.SetActive(true);
-
             if (secondsUntilFlashTimer > 0)
             {
                 // countdown until show
@@ -62,6 +57,17 @@ public class HotColdBar : MonoBehaviour
                     secondsUntilFlashTimer = secondsUntilFlash;
                     flashTimer = 1.5f;
                 }
+            }
+        }
+        else if (ApplicationModel.findAll)
+        {
+            text.fontSize = 54;
+
+            if (currScore != ApplicationModel.score)
+            {
+                currScore = ApplicationModel.score;
+                text.text = "Afikomen Remaining: " + (ApplicationModel.matzahs.Length - currScore);
+
             }
         }
     }

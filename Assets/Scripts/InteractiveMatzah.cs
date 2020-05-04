@@ -37,7 +37,7 @@ namespace MB {
             {
                 Destroy(this.gameObject);
                 ApplicationModel.score++;
-                if(ApplicationModel.score> ApplicationModel.matzahs.Length)
+                if(ApplicationModel.score >= ApplicationModel.matzahs.Length)
                 {
                     SceneManager.LoadScene("Winner");
                 }

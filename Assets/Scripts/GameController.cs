@@ -15,10 +15,6 @@ public class GameController : MonoBehaviour
     {
         if (ApplicationModel.findAll)
         {
-            ApplicationModel.secondsCount = 0;
-            ApplicationModel.minuteCount = 3;
-            ApplicationModel.hourCount = 0;
-            ApplicationModel.score = 0;
             GameObject[] easyM = GameObject.FindGameObjectsWithTag("Easy");
             GameObject[] hardM = GameObject.FindGameObjectsWithTag("Hard");
             easyM = easyM.Concat(hardM).ToArray();
@@ -26,13 +22,19 @@ public class GameController : MonoBehaviour
             //if Game Mode is findAll, randomly destory 3 matzahs, leave the rest
             for (int i=0; i<3; i++)
             {
-                matzahNumber = ApplicationModel.matzahs.Length + 1;
+                matzahNumber = ApplicationModel.matzahs.Length - 1;
                 int d = Random.Range(0, matzahNumber);
                 Destroy(ApplicationModel.matzahs[d]);
                 var m = new List<GameObject>(ApplicationModel.matzahs);
                 m.RemoveAt(d);
-                ApplicationModel.matzahs= m.ToArray();
+                ApplicationModel.matzahs = m.ToArray();
             }
+
+            ApplicationModel.secondsCount = 0;
+            ApplicationModel.minuteCount = 3;
+            ApplicationModel.hourCount = 0;
+            ApplicationModel.score = 0;
+
         }
         else
         {
