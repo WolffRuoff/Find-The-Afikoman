@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour
 {
     public int matzahSurvivor = 0;
     private int matzahNumber;
+
     // Start is called before the first frame update
     void Start()
     {
