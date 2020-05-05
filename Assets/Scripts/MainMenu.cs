@@ -13,6 +13,7 @@ public class MainMenu : MonoBehaviour
     public GameObject slide4;
     public GameObject slide5;
     public GameObject slide6;
+    public GameObject slide7;
     private GameObject[] slides;
     
     public Canvas modes;
@@ -27,7 +28,7 @@ public class MainMenu : MonoBehaviour
         howToPlay.enabled = false;
         modes.enabled = false;
         loadingScreen.GetComponent<LoadingScreen>().Disable();
-        slides = new GameObject[] { slide1, slide2, slide3, slide4, slide5, slide6 };
+        slides = new GameObject[] { slide1, slide2, slide3, slide4, slide5, slide6, slide7 };
         foreach(GameObject slide in slides)
         {
             slide.SetActive(false);

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class HotColdBar : MonoBehaviour
 {
-    public static float flashTimer = 1.5f;
+    public static float flashTimer = 5f;
     public float maxDist = 15f;
     public GameObject player;
 
@@ -47,15 +47,31 @@ public class HotColdBar : MonoBehaviour
 
                 // calculate the distance, lerp the color and update the text
                 float dist = Vector3.Distance(player.transform.position, matzah.transform.position) - .75f;
+                Debug.Log(dist);
                 hotCold.color = Color.Lerp(red, blue, (dist / maxDist));
-                text.text = (dist < .6f) ? "Hot" : "Cold";
                 text.fontSize = 115;
+                if (dist < .6f)
+                {
+                    text.text = "Hot";
+                }
+                else if (dist < 1.5)
+                {
+                    text.text = "Warmer";
+                }
+                else if (dist < 2)
+                {
+                    text.text = "Warm";
+                }
+                else
+                {
+                    text.text = "Cold";
+                }
 
                 // reset
                 if (flashTimer < 0)
                 {
                     secondsUntilFlashTimer = secondsUntilFlash;
-                    flashTimer = 1.5f;
+                    flashTimer = 5f;
                 }
             }
         }
