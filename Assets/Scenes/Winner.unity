@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.3587269, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -289,6 +289,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8777152037572235595, guid: fdac98f0afc6a9440a8ede69ca206811,
+        type: 3}
+      propertyPath: m_PixelsPerUnitMultiplier
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8777152037944170280, guid: fdac98f0afc6a9440a8ede69ca206811,
         type: 3}
       propertyPath: m_AnchorMin.x
@@ -344,6 +349,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Menu
       objectReference: {fileID: 0}
+    - target: {fileID: 8777152037944170286, guid: fdac98f0afc6a9440a8ede69ca206811,
+        type: 3}
+      propertyPath: m_PixelsPerUnitMultiplier
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777152037984973447, guid: fdac98f0afc6a9440a8ede69ca206811,
+        type: 3}
+      propertyPath: m_ReferencePixelsPerUnit
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 8777152038038404176, guid: fdac98f0afc6a9440a8ede69ca206811,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -396,6 +411,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 340821037}
     m_Modifications:
+    - target: {fileID: 7728113601227172918, guid: 6cd777c453913c8479eb82562e26a3c7,
+        type: 3}
+      propertyPath: m_PixelsPerUnitMultiplier
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7728113601227172919, guid: 6cd777c453913c8479eb82562e26a3c7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -425,6 +445,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7728113601439941864, guid: 6cd777c453913c8479eb82562e26a3c7,
+        type: 3}
+      propertyPath: m_ReferencePixelsPerUnit
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 7728113601439941866, guid: 6cd777c453913c8479eb82562e26a3c7,
         type: 3}

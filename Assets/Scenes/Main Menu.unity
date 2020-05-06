@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.3587269, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -240,7 +240,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 3
 --- !u!222 &11354252
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -682,7 +682,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 3
 --- !u!222 &142099835
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1109,6 +1109,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 8777152037572235595, guid: fdac98f0afc6a9440a8ede69ca206811,
+        type: 3}
+      propertyPath: m_PixelsPerUnitMultiplier
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8777152037944170280, guid: fdac98f0afc6a9440a8ede69ca206811,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -1149,6 +1154,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 8777152037944170286, guid: fdac98f0afc6a9440a8ede69ca206811,
+        type: 3}
+      propertyPath: m_PixelsPerUnitMultiplier
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8777152037984973441, guid: fdac98f0afc6a9440a8ede69ca206811,
         type: 3}
       propertyPath: m_IsActive
@@ -1163,6 +1173,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ReferenceResolution.y
       value: 540
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777152037984973447, guid: fdac98f0afc6a9440a8ede69ca206811,
+        type: 3}
+      propertyPath: m_ReferencePixelsPerUnit
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 8777152038038404176, guid: fdac98f0afc6a9440a8ede69ca206811,
         type: 3}
@@ -1316,7 +1331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
+  m_ReferencePixelsPerUnit: 300
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
@@ -1763,7 +1778,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 3
 --- !u!222 &573697496
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2454,7 +2469,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 3
 --- !u!222 &979357777
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2818,7 +2833,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 3
 --- !u!222 &1096391495
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3211,7 +3226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
+  m_ReferencePixelsPerUnit: 300
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
@@ -4108,7 +4123,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 3
 --- !u!222 &1687197069
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4579,11 +4594,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 952350534}
     m_Modifications:
+    - target: {fileID: 7728113601227172918, guid: 6cd777c453913c8479eb82562e26a3c7,
+        type: 3}
+      propertyPath: m_PixelsPerUnitMultiplier
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7728113601227172919, guid: 6cd777c453913c8479eb82562e26a3c7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1203581091}
+    - target: {fileID: 7728113601439941864, guid: 6cd777c453913c8479eb82562e26a3c7,
+        type: 3}
+      propertyPath: m_ReferencePixelsPerUnit
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 7728113601439941866, guid: 6cd777c453913c8479eb82562e26a3c7,
         type: 3}
       propertyPath: m_LocalPosition.x

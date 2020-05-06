@@ -42,14 +42,14 @@ public class HotColdBar : MonoBehaviour
             }
             else
             {
-                // show for 1 sec
+                // show for 5 sec
                 flashTimer -= Time.deltaTime;
 
                 // calculate the distance, lerp the color and update the text
                 float dist = Vector3.Distance(player.transform.position, matzah.transform.position) - .75f;
                 Debug.Log(dist);
                 hotCold.color = Color.Lerp(red, blue, (dist / maxDist));
-                text.fontSize = 115;
+                text.fontSize = 75;
                 if (dist < .6f)
                 {
                     text.text = "Hot";
